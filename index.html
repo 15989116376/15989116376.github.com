@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="utf-8">
 <title>妈妈,母亲节快乐</title>
+
+
  <script>
   function alerts() {
    alert('妈妈,节日快乐,嘿☺☺😊☺☺😊');
+
+  }
+  function run() {
+   var mp3 = "music.mp3";
+   var mp3 = new Audio(mp3);
+   mp3.play();
+  }
+  function stop() {
+   var mp3 = "music.mp3";
+   mp3.stop()
+   mp3.pause();
+   mp3.load();
 
   }
  </script>
@@ -28,7 +43,8 @@ p {
 </head>
 
 <body>
-
+<input type="button" onclick="run()" value="播放" style="width:100px;height: 60px"/>
+<input type="button" onclick="stop()" value="停止" style="width:100px;height: 60px"/>
 <h1>节日快乐,妈妈</h1>
 <p>妈妈,今年的母亲节又到了,祝你今天开心.😊😊😊😊</p>
 <p>                                             ------------赖宸铭</p>
